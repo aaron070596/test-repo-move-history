@@ -6,6 +6,6 @@ node {
 
     stage(' api Call' ) {
         def apiResponse =  httpRequest 'https://jsonplaceholder.typicode.com/todos/1'
-        echo "this is the  final  result ${apiResponse}"
+        echo "this is the  final  result ${apiResponse.content}"
     }
 }
