@@ -8,4 +8,8 @@ node {
         def apiResponse =  httpRequest 'https://jsonplaceholder.typicode.com/todos/1'
         echo "this is the  final  result ${apiResponse.content}"
     }
+
+    stage(' clean workspace' ) {
+        cleanWs() 
+    }
 }
