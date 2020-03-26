@@ -12,4 +12,9 @@ node {
     stage(' clean workspace' ) {
         cleanWs() 
     }
+
+    stage(' clean workspace' ) {
+        emailext body: 'pass', subject: 'succes job', to: 'aaron070596@gmail.com'
+    }
+
 }
