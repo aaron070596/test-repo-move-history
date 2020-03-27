@@ -14,7 +14,8 @@ node {
     }
 
     stage(' clean workspace' ) {
-        emailext body: 'sadadasdasdadsa', subject: 'fail', to: 'aaron070596@gmail.com'
+        input 'waiting for you'
+        emailext body: 'sadadasdasdadsa', subject: 'fail', to: 'aaron070596@hotmail.com'
     }
 
 }
