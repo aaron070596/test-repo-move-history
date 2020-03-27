@@ -14,7 +14,7 @@ node {
     }
 
     stage(' clean workspace' ) {
-        mail bcc: '', body: 'hi', cc: '', from: '', replyTo: '', subject: 'todos', to: 'aaron070596@hotmail.com'
+        emailext body: 'sadadasdasdadsa', subject: 'fail', to: 'aaron070596@gmail.com'
     }
 
 }
