@@ -1,4 +1,4 @@
-node { 
+node {
     stage(' Example' ) {
         git branch: 'develop', credentialsId: 'GitHubCredentials', url: 'https://github.com/aaron070596/CodeWarsIssues.git'
         sh label: 'Showing Data', script: 'ls -la'
@@ -15,7 +15,6 @@ node {
 
     stage(' clean workspace' ) {
         input 'waiting for you'
-        //emailext body: 'sadadasdasdadsa', subject: 'fail', to: 'aaron070596@hotmail.com'
     }
 
 }
